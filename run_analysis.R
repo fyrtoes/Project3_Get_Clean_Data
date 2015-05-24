@@ -113,7 +113,7 @@ KeepMeanSD <- function(df) {
 ## the purpose of this function is to get the average of all the data fields
 ##    for every activity, for every subject.
 AverageDF <- function(df) {
-  df <- df[1:nrow(df), 1:10]
+  #df <- df[1:nrow(df), 1:10]
     
   ### Nested function 3 - SplitMean(df, subject, activity)
   ### The purpose of this function is to take a dataframe, df,
@@ -165,5 +165,6 @@ train_subjects    <- GetSubjects("UCI HAR Dataset//train//subject_train.txt")
 df_test_full <- cbind(test_subjects, test_activities, df_x_test)
 df_train_full <- cbind(train_subjects, train_activities, df_x_train)
 df_full <- rbind(df_train_full, df_test_full)
-df_reduced <- KeepMeanSD(df_full)   # First dataframe requested
-df_average <- AverageDF(df_reduced)        # Second dataframe requested
+df_reduced <- KeepMeanSD(df_full)
+df_average <- AverageDF(df_reduced)
+write.table(df_average, file = "sensor_data.txt", row.names = F)

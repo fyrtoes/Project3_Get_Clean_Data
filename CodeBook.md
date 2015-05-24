@@ -62,7 +62,11 @@ In this codebook you will find a short explanation on the functions and variable
 Merging of all test data, train data, and those two together in the next three variables
 
 10. df_test_full - assigned the return value of cbind(test_subjects, test_activities, df_x_test). Test subdataframe.
+
 11. df_train_full - assigned the return value of cbind(train_subjects, train_activities, df_x_train). Train subdataframe.
+
 12. df_full - assigned the return value of rbind(df_train_full, df_test_full). This is the entire data table that is requested before averaging out.
+
 13. df_reduced - assigned the return value of KeepMeanSD(df_full)
+
 14. df_average - assigned the return value of AverageDF(df_reduced)

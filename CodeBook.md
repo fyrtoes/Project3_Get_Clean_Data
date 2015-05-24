@@ -41,32 +41,32 @@ In this codebook you will find a short explanation on the functions and variable
 ### Variables
 ---
 
-1. features - assigned the return value of GetLabels()
+1. features - Vector - assigned the return value of GetLabels()
 
-2. df_x_test - assigned the return value of GetData561("UCI HAR Dataset//test//X_test.txt")
+2. df_x_test - dataframe - assigned the return value of GetData561("UCI HAR Dataset//test//X_test.txt")
 
-3. df_x_train - assigned the return value of GetData561("UCI HAR Dataset//train//X_train.txt")
+3. df_x_train - dataframe - assigned the return value of GetData561("UCI HAR Dataset//train//X_train.txt")
 
 4. names(df_x_test) - assign the value of "features" to the column names of "df_x_test"
 
 5. names(df_x_train) - assign the value of "features" to the column names of "df_x_train"
 
-6. test_activities - assigned the return value of GetActivities("UCI HAR Dataset//test//y_test.txt")
+6. test_activities - vector - assigned the return value of GetActivities("UCI HAR Dataset//test//y_test.txt")
 
-7. test_subjects - assigned the return value of GetSubjects("UCI HAR Dataset//test//subject_test.txt")
+7. test_subjects - vector - assigned the return value of GetSubjects("UCI HAR Dataset//test//subject_test.txt")
 
-8. train_activities - assigned the return value of GetActivities("UCI HAR Dataset//train//y_train.txt")
+8. train_activities - vector - assigned the return value of GetActivities("UCI HAR Dataset//train//y_train.txt")
 
-9. train_subjects - assigned the return value of GetSubjects("UCI HAR Dataset//train//subject_train.txt")
+9. train_subjects - vector - assigned the return value of GetSubjects("UCI HAR Dataset//train//subject_train.txt")
 
 	'Merging of all test data, train data, and those two together in the next three variables`
 
-10. df_test_full - assigned the return value of cbind(test_subjects, test_activities, df_x_test). Test subdataframe.
+10. df_test_full - dataframe - assigned the return value of cbind(test_subjects, test_activities, df_x_test). Test subdataframe.
 
-11. df_train_full - assigned the return value of cbind(train_subjects, train_activities, df_x_train). Train subdataframe.
+11. df_train_full - dataframe - assigned the return value of cbind(train_subjects, train_activities, df_x_train). Train subdataframe.
 
-12. df_full - assigned the return value of rbind(df_train_full, df_test_full). This is the entire data table that is requested before averaging out.
+12. df_full - dataframe - assigned the return value of rbind(df_train_full, df_test_full). This is the entire data table that is requested before averaging out.
 
-13. df_reduced - assigned the return value of KeepMeanSD(df_full)
+13. df_reduced - dataframe - assigned the return value of KeepMeanSD(df_full). Contains the dataframe from step 4 in the assignment. Not yet averaged out.
 
-14. df_average - assigned the return value of AverageDF(df_reduced)
+14. df_average - dataframe - assigned the return value of AverageDF(df_reduced). Contains the final dataframe of averages from step 5.

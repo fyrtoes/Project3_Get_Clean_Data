@@ -1,10 +1,6 @@
 # Project3_Get_Clean_Data
-Project assignment for Coursera course "Getting and Cleaning Data"
+Project files for Coursera course "Getting and Cleaning Data"
 ---
-title: "README"
-output: html_document
----
-
 Contents of repo:
 
 1. "run_analysis.R"

@@ -10,23 +10,23 @@ In this codebook you will find a short explanation on the functions and variable
 
 2. Function 2 - GetData561(path) - The purpose of this func. is to retrieve, clean, and tabulate the raw data from these files:
 
-* "UCI HAR Dataset//test//X_test.txt"
+	* "UCI HAR Dataset//test//X_test.txt"
 
-* "UCI HAR Dataset//train//X_train.txt"
+	* "UCI HAR Dataset//train//X_train.txt"
 
 3. Nested Function 1 - VectorSplitClean(x) - The purpose of this nested function is to take a single-element character vector, x, and split it between the spaces, unlist the result, turn it into numeric datatype, and remove all NAs. Return the resulting vector with many elements (ideally 561)
 
 4. Function 3 - GetSubjects(path) - The purpose of this function is to retrieve, clean, and return a vector from the subject data found in the following files:
 
-* "UCI HAR Dataset//test//subject_test.txt"
+	* "UCI HAR Dataset//test//subject_test.txt"
 
-* "UCI HAR Dataset//train//subject_train.txt"
+	* "UCI HAR Dataset//train//subject_train.txt"
 
 5. Function 4 - GetActivities(path) - The purpose of this function is to retrieve, clean, and return a vector from the activity data found in the following files:
 
-* "UCI HAR Dataset//test//y_test.txt"
+	* "UCI HAR Dataset//test//y_test.txt"
 
-* "UCI HAR Dataset//train//y_train.txt"
+	* "UCI HAR Dataset//train//y_train.txt"
 	
 6. Nested Function 2 - DesignateActivity(num) - The purpose of this nested function is to take a vector of strings and change each string depending on its value.
 
@@ -59,7 +59,7 @@ In this codebook you will find a short explanation on the functions and variable
 
 9. train_subjects - assigned the return value of GetSubjects("UCI HAR Dataset//train//subject_train.txt")
 
-Merging of all test data, train data, and those two together in the next three variables
+`Merging of all test data, train data, and those two together in the next three variables`
 
 10. df_test_full - assigned the return value of cbind(test_subjects, test_activities, df_x_test). Test subdataframe.
 

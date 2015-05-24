@@ -59,7 +59,7 @@ In this codebook you will find a short explanation on the functions and variable
 
 9. train_subjects - assigned the return value of GetSubjects("UCI HAR Dataset//train//subject_train.txt")
 
-`Merging of all test data, train data, and those two together in the next three variables`
+	'Merging of all test data, train data, and those two together in the next three variables`
 
 10. df_test_full - assigned the return value of cbind(test_subjects, test_activities, df_x_test). Test subdataframe.
 

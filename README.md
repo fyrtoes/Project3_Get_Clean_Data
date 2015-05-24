@@ -6,6 +6,7 @@ output: html_document
 ---
 
 Contents of repo:
+
 1. "run_analysis.R"
 2. "sensor_data()"
 
